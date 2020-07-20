@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <title>我的家乡</title>
+    <meta charset="UTF-8">
+   
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all">  
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+</head>
+<body >
+    <center><h2 style="color:#905a26">家乡大同</h2></center>
+    <hr width="1000" color=#cb9c6b size=5>
+    <center><h2 style="color:#cb9c6b">塞上古都，云中圣境，天下大同</h2></center>
+    <header>
+        <!--nav也是HTML5中的新标签，用来定义导航中的链接-->
+        <center>
+            <nav>
+                <ul>
+                    <li><a href="首页.html">首页</a></li>
+                    <li><a href="历史.html">历史</a></li>
+                    <li><a href="美食.html">美食</a></li>
+                    <li><a href="风景.html">美景</a></li>
+                </ul>
+        
+            </nav>
+        </center>
+    </header>
+    
+    <div class="showPic">
+        <center><img id="placeholder" src="images/长城2.jpg" width=1502px border="1px"></center>
+        <ul>
+            <li>
+                <a href="images/床前明月光.png" onclick="showPic(this); return false;">1</a>
+            </li>
+            <li>
+                <a href="images/疑是地上霜.png" onclick="showPic(this); return false;">2</a>
+            </li>
+            <li>
+                <a href="images/举头望明月.png" onclick="showPic(this); return false;">3</a>
+            </li>
+            <li>
+                <a href="images/低头思故乡.png" onclick="showPic(this); return false;">4</a>
+            </li>
+             
+        </ul>
+    </div>
+
+    <section class="clearfix">
+        <img class="leftPic" src="images/云冈石窟.jpg" width="30%">
+        <p style=color:#d2b689>
+            大同，古称云中、平城，地处中国华北地区、山西北部、大同盆地中心、晋冀蒙三省区交界处、黄土高原东北边缘，实为全晋之屏障、北方之门户，
+            且扼晋、冀、内蒙之咽喉要道，北接中国对蒙古国最大口岸二连浩特市，是山西省省域副中心城市，历代兵家必争之地，有“北方锁钥”之称。
+            大同是首批国家历史文化名城之一、曾是北魏首都，辽、金陪都，境内古迹众多，著名的文物古迹包括云冈石窟、华严寺、善化寺、恒山悬空寺、九龙壁等，
+            是中国首批13个较大的市之一、中国九大古都之一、国家新能源示范城市、中国优秀旅游城市、国家园林城市、全国双拥模范城市、全国性交通枢纽城市、中国雕塑之都、中国十佳运动休闲城市。
+        </p>
+    </section>
+
+    <section class="clearfix">
+        <img class="leftPic" src="images/悬空寺2.jpg" width="30%">
+        <p style=color:#d2b689>
+            大同市位于山西省最北端，东经112°34′——114°33′，北纬39°03′——40°44′。北以外长城为界，与内蒙古自治区乌兰察布市的兴和县、丰镇市、凉城县毗邻，
+        西、南与本省朔州市的右玉县、怀仁县、应县及忻州市的繁峙县相连，东与河北省张家口市的怀安县、阳原县、蔚县及保定市的涞源县、阜平县接，
+        公路里程距北京约330千米、太原约290千米、呼和浩特约300千米；为首都之屏障、全晋北方之门户，且扼晋、冀、内蒙之咽喉要道，是历代兵家必争之地。 
+        大同市全境总面积14176平方千米，市区面积2080平方千米，建成区202.74平方千米（2018年）。
+        </p>
+    </section>
+
+
+  
+    <hr>
+    <br>
+    
+    <footer>
+        <p style=color:#d2b689>制作人：李宇星</p>
+    </footer>
+
+    <script>
+        function showPic(whichpic) {
+            let source = whichpic.getAttribute("href");
+            let place = document.getElementById("placeholder");
+            place.setAttribute("src", source);
+        }
+    </script>
+</body>
+</html>

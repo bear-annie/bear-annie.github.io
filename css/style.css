@@ -1,0 +1,70 @@
+
+body{
+    background-color: #f1ecd8;
+
+}
+body a{text-decoration: none;  }
+    header{
+        overflow: hidden;   /*overflow 属性规定当内容溢出元素框时发生的事情，这里设置为溢出的话就不显示*/
+        background-color: #be8b4b;
+        border: 1px solid black;
+ #ebeee7 #74bf02 #e5cd61
+      
+    }
+        /*下面运用了css中的后代选择器*/
+        header nav{
+            font-size: large;
+        }
+            header nav ul li{
+                display: inline;
+                /*内边距*/
+                padding: 0 20px 20px 14px;
+                /*外边框*/
+                margin: 0 100px;
+                
+            }
+                
+
+
+    section { 
+	
+        background-color: ;
+        border: 1px solid blue;
+        border: 1px solid black;
+       
+
+        /*外边距*/
+        margin: 5px 0;
+    }
+    .clearfix:after {
+        /*通过给父元素添加 clearfix 类,实现父元素包围浮动图片的效果*/
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+        .leftPic {
+            float: left;
+            margin: 10px;
+        }
+     
+        p {
+            /*边框*/
+            border: #cb9c6b 2px;
+
+            /*内边距*/
+            padding: 10px;
+
+            /*外边距*/
+            margin: 10px;
+        }
+        footer{border: 1px solid ;}
+    
+    footer{
+        text-align: center;
+        background-color:  ;
+       border:#d2b689;
+        margin: 5px 0 0 0;
+    }
+
